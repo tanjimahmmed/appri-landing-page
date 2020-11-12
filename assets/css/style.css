@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a:focus, input:focus, textarea:focus, button:focus{
+    outline: 0 solid;
+}
+a:hover{
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin:0 0 15px;
+    font-weight:normal;
+    font-style: normal;
+    font-weight: 600;
+}
+p{
+    font-size: 15px;
+    font-weight: normal;
+}
+.pos_relative{
+    position: relative;
+}
+.fix{
+    overflow: hidden;
+}
+body{
+    font-weight: normal;
+    font-style: normal;
+}
+.img{
+    max-width: 100%;
+}
+.btnc {
+    border: medium none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 17px 35px;
+    transition: all 0.3s ease 0s;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.btnc_border{
+    background: transparent;
+    border-color: #00c867;
+    color: #1c3354;
+}
+.btnc_border:hover{
+    border-color: transparent;
+    color: #fff;
+}
