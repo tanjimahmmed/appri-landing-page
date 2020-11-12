@@ -1,130 +1,27 @@
 /* Laptop Layout: 1200px. */
 @media only screen and (min-width: 1200px) and (max-width: 1500px) { 
-    .info_img img {
-        margin-right: 0;
-        margin-left: -160px;
-    }
+    
     
 }
 /* Medium Layout: 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-    .info_img img {
-        margin-right: 0;
-        margin-left: -213px;
-    }
-    .main_menu ul li {
-        margin: 0 18px;
-    }
-    .bounce-animate {
-        animation: inherit;
-    }
-    .access_img img {
-        margin-left: 0;
-    }
-    .info_img img {
-        margin-left: 0;
-    }
-    .testimonial_img img {
-        margin-left: 0;
-    }
-    .footer_bg {
-        background-size: cover;
-    }
+    
 }
 /* Tablet & mobile Layout: 768px. */
 @media only screen and (max-width: 991px) { 
-    .footer_bg {
-        background-size: cover;
-    }
-    .header_transparent {
-        padding: 20px 0;
-    }
-    .slider_text {
-        margin-bottom: 25px;
-    }
-    .bounce-animate {
-        animation: inherit;
-    }
-    .access_img img {
-        margin-left: 0;
-        max-width: 100%;
-    }
-    .info_img img {
-        margin-right: 0;
-        max-width: 100%;
-    }
-    .testimonial_img img {
-        margin-left: 0;
-        max-width: 100%;
-    }
-    .newsletter input {
-        width: 65%;
-    }
+    
 }
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
-    .footer_bg {
-        background-size: cover;
-    }
+    
     
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
-    .footer_bg {
-        background-size: cover;
-    }
-    .access_img img {
-        margin-left: 0;
-        max-width: 100%;
-    }
-    .info_img img {
-        margin-right: 0;
-        max-width: 100%;
-    }
-    .testimonial_img img {
-        margin-left: 0;
-        max-width: 100%;
-    }
-    .slider_text h2 {
-        font-size: 35px;
-    }
-    .slider_img img {
-        max-width: 100%;
-    }
-    .access_text h2 {
-        font-size: 35px;
-    }
-    .section_title h2 {
-        font-size: 32px;
-    }
-    .newsletter input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .newsletter button {
-        float: none;
-    }
-    .footer_menu ul li {
-        margin-left: 0;
-        margin-right: 20px;
-    }
-    .shape-s-1 {
-        left: 33%;
-    }
-    .shape_6 {
-        right: 45%;
-    }
-    .shape-p {
-        right: 50%;
-    }
-    .shape-a {
-        right: 50%;
-    }
+    
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
-    .footer_bg {
-        background-size: cover;
-    }
+   
 }
