@@ -18,7 +18,7 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
+        fade: false,
         asNavFor: '.test_img_active'
       });
       $('.test_img_active').slick({
@@ -28,7 +28,8 @@
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        centerPadding: '0px'
+        centerPadding: '0px',
+        arrows: false,
       });
     
 })(jQuery);

@@ -525,3 +525,20 @@ Testimonial css
     width: auto !important;
     display: block;
 }
+.test_img_item::before {
+    background: #000;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 109px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.slick-center .test_img_item::before {
+    opacity: 0;
+}
+.test_img_item {
+    position: relative;
+}
