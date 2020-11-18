@@ -1,6 +1,7 @@
 /* 
 Template Name: appri landing page
 Design By: Md Tanjim Ahmmed
+Version: 1.0
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -541,4 +542,258 @@ Testimonial css
 }
 .test_img_item {
     position: relative;
+}
+
+.scr_sht img {
+    max-width: 100%;
+}
+/* ===============
+faq css
+================ */
+.faq_img img {
+    max-width: 100%;
+}
+.faq_wrapper .card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 73px 0px rgba(0, 0, 0, 0.09);
+    border: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.faq_wrapper .btn {
+    
+    display: block;
+    border-radius: 10px;
+    text-align: left;
+    padding: 30px 35px;
+    font-size: 18px;
+}
+.faq_wrapper .btn.collapsed {
+    background-color: #fff;
+   
+}
+.faq_wrapper .card-header .collapse {
+    background-image: -moz-linear-gradient( -51deg, rgb(47,50,212) 0%, rgb(113,66,247) 100%);
+    background-image: -webkit-linear-gradient( -51deg, rgb(47,50,212) 0%, rgb(113,66,247) 100%);
+    background-image: -ms-linear-gradient( -51deg, rgb(47,50,212) 0%, rgb(113,66,247) 100%);
+}
+.faq_wrapper .card-header h5 {
+    color: #fff;
+}
+.faq_wrapper .card-header:first-child {
+    border-radius: 0;
+}
+.faq_wrapper .card-header {
+    padding: 0;
+    border: transparent;
+}
+
+.faq_wrapper .card-body {
+    padding: 30px 35px;
+    color: #878991;
+}
+.faq_wrapper .accordion > .card:first-of-type {
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.faq_wrapper .accordion > .card {
+    border-radius: 10px !important;
+}
+        
+.faq_wrapper h5 a.btn {
+    color: #fff;
+    position: relative;
+    font-weight: 700;
+}
+
+.faq_wrapper h5 a.btn.collapsed {
+    color: #333;
+}
+
+.faq_wrapper h5 a.btn::after {
+    content: '-';
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 30px;
+    transform: translate(0, 5px);
+}
+
+.faq_wrapper h5 a.btn.collapsed::after {
+    content: '+'; 
+    background-image: -moz-linear-gradient( -51deg, rgb(47,50,212) 0%, rgb(113,66,247) 100%);
+    background-image: -webkit-linear-gradient( -51deg, rgb(47,50,212) 0%, rgb(113,66,247) 100%);
+    background-image: -ms-linear-gradient( -51deg, rgb(47,50,212) 0%, rgb(113,66,247) 100%);
+    color: #fff;
+}
+.faq_area {
+    padding-top: 360px;
+    position: relative;
+    z-index: 1;
+}
+.faq_area::after {
+    position: absolute;
+    left: 0;
+    top: -9%;
+    content: '';
+    background-image: url(../img/faq/faq-bg.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+/* ===========
+brand css
+=========== */
+.brand_heading h3 {
+    color: #30323d;
+    font-weight: 600;
+    font-size: 30px;
+}
+.single_brand img {
+    opacity: 0.4;
+}
+
+/* ============
+blog css
+============== */
+.latest_blogcontent {
+    padding: 0 30px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 99;
+}
+
+.inner_blog {
+    background: #fff;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.07);
+}
+
+.latest_blog_img img {
+    border-radius: 30px;
+    max-width: 100%;
+}
+
+.l_b_meta span, .l_b_meta span a {
+    font-size: 14px;
+    margin-right: 12px;
+    color: #c8c3c3;
+}
+
+.l_b_meta span i.fa {
+    color: #7b73ee;
+}
+
+.l_b_meta span i.fa {
+    margin-right: 5px;
+}
+
+.inner_blog h3 a {
+    font-size: 18px;
+    color: #30323d;
+}
+
+.inner_blog h3 {
+    line-height: 0.9;
+}
+
+/* =============
+news letter css
+============= */
+.subscribe_title h3 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 36px;
+}
+
+.subscribe_space {
+    padding: 55px 80px;
+    border-radius: 15px;
+}
+
+.subscribe_form input {
+    width: 100%;
+    height: 80px;
+    border-radius: 50px;
+    border: 0;
+    padding: 0 45px;
+}
+
+.subscribe_form form {
+    position: relative;
+}
+
+.subscribe_form button {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.subscribe_form button.btn {
+    padding: 20px 38px;
+}
+
+.available_btn a {
+    display: inline-block;
+    box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.07);
+    padding: 8px 37px;
+    border-radius: 50px;
+}
+
+.available_btn img {
+    float: left;
+}
+
+.btn_download_text {
+    padding-left: 15px;
+    padding-top: 2px;
+    overflow: hidden;
+    position: relative;
+    top: -4px;
+}
+
+.btn_download_text span {
+    color: #38363d;
+    font-size: 14px;
+}
+
+.btn_download_text h4 {
+    color: #38363d;
+    font-size: 24px;
+    margin: 0;
+}
+.available_btn a {
+    margin-left: 20px;
+}
+
+.available_text h2 {
+    font-size: 60px;
+    color: #38363d;
+}
+
+/* ===========
+copyright css
+============ */
+
+.copy_right_txt p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #38363d;
+}
+
+.copy_right_txt {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 35px;
 }
