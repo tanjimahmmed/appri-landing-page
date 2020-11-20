@@ -21,20 +21,33 @@
 </head>
 <body>
 
+<!-- loader -->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_one"></div>
+        </div>
+    </div>  
+</div>
+<!-- loader end -->
+
 <!-- header area -->
-<header class="header_transparent">
+<header id="header_sticky" class="header_area header_transparent">
     <div class="container">
         <div class="row d-flex align-items-center">
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-lg-2">
                 <div class="logo">
                     <a href="#"><img src="assets/img/hero/logo.png" alt=""></a>
                 </div>
             </div>
-            <div class="col-xl-8">
+            <div class="col-xl-8 col-lg-8">
                 <div class="main_menu text-right">
-                    <nav>
+                    <nav id="mobile_menu">
                         <ul>                             
-                            <li><a href="#">Home</a>
+                            <li><a href="#home">Home</a>
                                 <ul class="submenu">
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">Features +</a>
@@ -53,17 +66,18 @@
                                     <li><a href="#">News</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Screenshot</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">News</a></li>
+                            <li><a href="#feature">Features</a></li>
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#screenshot">Screenshot</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#news">News</a></li>
                         </ul>
                     </nav>
                 </div>
+                <div class="mobile_menu"></div>
             </div>
-            <div class="col-xl-2">
-                <div class="header_btn">
+            <div class="col-xl-2 col-lg-2 d-flex align-items-center">
+                <div class="header_btn d-none d-lg-block">
                     <div class="header_btn">
                         <a href="#" class="btn">Sign In</a>
                     </div>
@@ -76,14 +90,14 @@
 
 <main>
     <!-- slider area -->
-    <section class="hero_slide slider_bg pos_relative" style="background-image: url(./assets/img/hero/cover-home.png);">
+    <section id="home" class="hero_slide slider_bg pos_relative" style="background-image: url(./assets/img/hero/cover-home.png);">
         <div class="shape_wrapper">
-            <img class="shape_pr shape_01" src="assets/img/hero/shape-01.png" alt="">
-            <img class="shape_pr shape_02" src="assets/img/hero/shpae-02.png" alt="">
+            <img class="shape_pr shape_01 rotateme" src="assets/img/hero/shape-01.png" alt="">
+            <img class="shape_pr shape_02 heartbeat" src="assets/img/hero/shpae-02.png" alt="">
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-lg-9">
                     <div class="hero_desc">
                         <h2>Make your life
                             greater then before </h2>
@@ -94,9 +108,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-xl-5 d-none d-xl-block">
                     <div class="slider_img pos_relative">
-                        <img src="./assets/img/hero/mobile.png" alt="">
+                        <img class="app-main" src="./assets/img/hero/mobile.png" alt="">
                         <img class="app-shape" src="assets/img/hero/animate-p1.png" alt="">
                         <img class="app-shape-02" src="assets/img/hero/animate-p2.png" alt="">
                     </div>
@@ -107,29 +121,29 @@
     <!-- slider area end -->
 
     <!-- fact area -->
-    <section class="fact_area pt-65 pb-60">
+    <section class="fact_area pt-65 pb-30">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 offset-xl-2">
                     <div class="row fact_parcent justify-content-between">
-                        <div class="col-xl-3">
-                            <div class="single_fact text-center">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                            <div class="single_fact mb-30 text-center">
                                 <div class="counter">
                                     <h2 class="couterup"><span>40,790</span></h2>
                                     <span>Download App</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
-                            <div class="single_fact text-center">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                            <div class="single_fact mb-30 text-center">
                                 <div class="counter">
                                     <h2 class="couterup"><span>10,90</span>+</h2>
                                     <span>Active User</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
-                            <div class="single_fact text-center">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                            <div class="single_fact mb-30 text-center">
                                 <div class="counter">
                                     <h2 class="couterup"><span>790</span>+</h2>
                                     <span>Positive Reviews</span>
@@ -144,14 +158,14 @@
     <!-- fact area end -->
 
     <!-- feature area -->
-    <section class="feature_area pos_relative pt-80 pb-120">
+    <section id="feature" class="feature_area pos_relative pt-80 pb-120">
         <div class="shape_sd_wrapper">
             <img class="shape_sd shape_sd_01" src="assets/img/icon/shape-side-1.png" alt="">
             <img class="shape_sd shape_sd_02" src="assets/img/icon/shape-side-2.png" alt="">
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 offset-xl-3">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                     <div class="section_title mb-70 text-center">
                         <h2>Unique Features</h2>
                         <p>Enables you to define cross-channel profiles and improve 
@@ -160,7 +174,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="single_features text-center mb-30">
                         <div class="features_icon mb-35">
                             <img src="assets/img/icon/icon-1.png" alt="">
@@ -171,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="single_features text-center mb-30">
                         <div class="features_icon mb-35">
                             <img src="assets/img/icon/icon-2.png" alt="">
@@ -182,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="single_features text-center mb-30">
                         <div class="features_icon mb-35">
                             <img src="assets/img/icon/icon-3.png" alt="">
@@ -199,7 +213,7 @@
     <!-- feature area end -->
 
 <!-- showcase area -->
-    <div class="section_info pb-0" style="background-image: url(./assets/img/video/bg-videos.png);">
+    <div id="overview" class="section_info pb-0" style="background-image: url(./assets/img/video/bg-videos.png);">
         <div class="container">
             <!-- video area -->
             <div class="row">
@@ -214,7 +228,7 @@
 
         <!-- how it work -->
             <div class="row">
-                <div class="col-xl-6 offset-xl-3">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                     <div class="section_title mt-140 mb-90 text-center">
                         <h2>How It Works</h2>
                         <p>Enables you to define cross-channel profiles and improve 
@@ -225,12 +239,12 @@
         
 
             <div class="row">
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-lg-6">
                     <div class="build_better_img" style="background-image: url(./assets/img/video/iphone-bg-01.png);">
                         <img src="assets/img/video/iphone-01.png" alt="">
                     </div>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-xl-5 col-lg-6">
                     <div class="build_better_desc pt-160">
                         <h2>Build better managment
                             easier togother</h2>
@@ -241,14 +255,14 @@
             </div>
 
             <div class="row">
-                <div class="col-xl-5">
+                <div class="col-xl-5 col-lg-6">
                     <div class="build_better_desc pt-160">
                         <h2>Change your shedule after account creating</h2>
                         <p>Enables you to define cross-channel profiles and improve audience. sessions per week There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.</p>
                         <a href="" class="btn gradient_btn">Try it Free Now</a>
                     </div>
                 </div>
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-lg-6">
                     <div class="build_better_img create_ac text-center" style="background-image: url(./assets/img/video/iphone-bg-02.png);">
                         <img src="assets/img/video/iphone-02.png" alt="">
                     </div>
@@ -262,10 +276,10 @@
 <!-- showcase area end -->
 
 <!-- pricing area -->
-<section class="pricing_area">
+<section id="pricing" class="pricing_area">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 offset-xl-3">
+            <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-10 offset-md-1">
                 <div class="section_title mt-140 mb-90 text-center">
                     <h2>Pricing Plan</h2>
                     <p>Enables you to define cross-channel profiles and improve 
@@ -287,7 +301,7 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="row">
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="price_box text-center mb-30">
                                 <div class="price_header">
                                     <h4>Primary</h4>
@@ -307,7 +321,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="price_box active text-center mb-30">
                                 <div class="price_header">
                                     <h4>Popular</h4>
@@ -327,7 +341,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="price_box text-center mb-30">
                                 <div class="price_header">
                                     <h4>Extend</h4>
@@ -351,7 +365,7 @@
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="row">
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="price_box text-center mb-30">
                                 <div class="price_header">
                                     <h4>Primary</h4>
@@ -371,7 +385,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="price_box text-center mb-30">
                                 <div class="price_header">
                                     <h4>Popular</h4>
@@ -391,7 +405,7 @@
                                 </div>
                             </div> 
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="price_box active text-center mb-30">
                                 <div class="price_header">
                                     <h4>Extend</h4>
@@ -423,7 +437,7 @@
 <section class="testimonial_area blue_grad_bg test_space pb-130">
     <div class="container">
         <div class="row">
-            <div class="col-xl-8 offset-xl-2">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
                 <div class="section_title mb-40 text-center">
                     <h2 class="text-white">Testimonial</h2>
                 </div>
@@ -458,19 +472,19 @@
                         <img src="assets/img/testimonial/auth-1.png" alt="">
                     </div>
                     <div class="test_img_item">
-                        <img src="assets/img/testimonial/auth-1.png" alt="">
+                        <img src="assets/img/testimonial/auth-2.png" alt="">
+                    </div>
+                    <div class="test_img_item">
+                        <img src="assets/img/testimonial/auth-3.png" alt="">
                     </div>
                     <div class="test_img_item">
                         <img src="assets/img/testimonial/auth-1.png" alt="">
                     </div>
                     <div class="test_img_item">
-                        <img src="assets/img/testimonial/auth-1.png" alt="">
+                        <img src="assets/img/testimonial/auth-2.png" alt="">
                     </div>
                     <div class="test_img_item">
-                        <img src="assets/img/testimonial/auth-1.png" alt="">
-                    </div>
-                    <div class="test_img_item">
-                        <img src="assets/img/testimonial/auth-1.png" alt="">
+                        <img src="assets/img/testimonial/auth-3.png" alt="">
                     </div>
                 </div>
             </div>
@@ -480,10 +494,10 @@
 <!-- Testimonial area end -->
 
 <!-- screenshot app area -->
-<section class="screenshot_area">
+<section id="screenshot" class="screenshot_area">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 offset-xl-3">
+            <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3">
                 <div class="section_title mt-140 mb-10 text-center">
                     <h2>App Screenshot</h2>
                     <p>Enables you to define cross-channel profiles and improve 
@@ -506,7 +520,7 @@
 <section class="faq_area pb-130">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 offset-xl-3">
+            <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-10 offset-md-1">
                 <div class="section_title mb-80 text-center">
                     <h2>FAQS</h2>
                     <p>Enables you to define cross-channel profiles and improve 
@@ -515,12 +529,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-5">
+            <div class="col-xl-5 col-lg-5">
                 <div class="faq_img">
                     <img src="assets/img/faq/faq-img.png" alt="">
                 </div>
             </div>
-            <div class="col-xl-7">
+            <div class="col-xl-7 col-lg-7">
                 <div class="faq_wrapper">
                     <div id="accordion">
                         <div class="card">
@@ -572,7 +586,7 @@
         </div>
         <!-- brand area -->
         <div class="row">
-            <div class="col-xl-6 offset-xl-3">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
                 <div class="brand_heading text-center mt-130 mb-50">
                     <h3>Trusted by thousands of people and 
                         companies worldwide</h3>
@@ -603,8 +617,8 @@
         </div>
         <!-- brand area end -->
         <!-- newsletter area -->
-        <div class="row">
-            <div class="col-xl-6 offset-xl-3">
+        <div id="news" class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-12">
                 <div class="section_title mt-140 mb-80 text-center">
                     <h2>Latest News</h2>
                     <p>Enables you to define cross-channel profiles and improve 
@@ -615,7 +629,7 @@
         <!-- newsletter area end -->
         <!-- blog area -->
         <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                 <div class="latest_blog mb-30">
                     <div class="latest_blog_img">
                         <img src="assets/img/blog/blog-1.jpg" alt="">
@@ -631,7 +645,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                 <div class="latest_blog mb-30">
                     <div class="latest_blog_img">
                         <img src="assets/img/blog/blog-2.jpg" alt="">
@@ -647,7 +661,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                 <div class="latest_blog mb-30">
                     <div class="latest_blog_img">
                         <img src="assets/img/blog/blog-3.jpg" alt="">
@@ -674,12 +688,12 @@
     <div class="container">
         <div class="subscribe_space blue_grad_bg">
             <div class="row">
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-lg-3 col-md-12">
                     <div class="subscribe_title">
                         <h3>Subscribe Newsletter</h3>
                     </div>
                 </div>
-                <div class="col-xl-9">
+                <div class="col-xl-9 col-lg-9 col-md-12">
                     <div class="subscribe_form">
                         <form action="#">
                             <input type="email" name="" placeholder="Email">
@@ -697,7 +711,7 @@
 <section class="app_stor_area mt-80">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 offset-xl-3">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-12">
                 <div class="available_text">
                     <h2 class="text-center mb-40">Now Available On</h2>
                     <div class="available_btn mb-75">
@@ -729,7 +743,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="copy_right_txt text-center">
-                    <p>2019 Copyright Appri App Landing Designed by Love . All Rights Reserved</p>
+                    <p>2020 Copyright Appri App Landing Designed by Love . All Rights Reserved</p>
                 </div>
             </div>
         </div>
@@ -749,6 +763,8 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/one-page-nav-min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

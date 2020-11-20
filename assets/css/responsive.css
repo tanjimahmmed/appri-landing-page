@@ -1,15 +1,115 @@
 /* Laptop Layout: 1200px. */
 @media only screen and (min-width: 1200px) and (max-width: 1500px) { 
-    
-    
+    .app-shape-02 {
+        bottom: 14%;
+        left: 36%;
+    }
+    .app-shape {
+        top: 27%;
+        left: -38%;
+    }
+    .app-main {
+        margin-left: -73px;
+    }
+    .shape_02 {
+        bottom: 7%;
+        left: 45%;
+    }
+    .shape_01 {
+        left: 2%;
+    }
 }
 /* Medium Layout: 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-    
+    .slider_bg {
+        background-position: center center;
+        min-height: 1060px;
+    }
+    .feature_text p {
+        padding: 0 5px;
+    }
+    .build_better_img img {
+        max-width: 100%;
+    }
+    .build_better_desc {
+        padding-top: 60px;
+    }
+    .build_better_img.create_ac img {
+        width: 60%;
+    }
+    .inner_blog {
+        padding: 20px 25px;
+    }
+    .inner_blog h3 a {
+        font-size: 16px;
+    }
+    .l_b_meta span, .l_b_meta span a {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    .available_btn a {
+        margin-left: 35px;
+    }
 }
 /* Tablet & mobile Layout: 768px. */
 @media only screen and (max-width: 991px) { 
-    
+    .logo {
+        margin-top: 25px;
+    }
+    .hero_slide {
+        height: 800px;
+    }
+    .shape_02 {
+        bottom: 7%;
+    }
+    .hero_desc {
+        padding-top: 200px;
+    }
+    .shape_01 {
+        top: 12%;
+    }
+    .single_fact::after {
+        right: -25px;
+    }
+    .feature_text p {
+        padding: 0px;
+    }
+    .watch_video {
+        min-height: 450px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    .build_better_desc {
+        padding-top: 50px;
+    }
+    .build_better_desc h2 {
+        font-size: 30px;
+    }
+    .build_better_img.create_ac {
+        padding-top: 35px;
+    }
+    .faq_area {
+        padding-top: 180px;
+    }
+    .faq_area::after {
+        top: -16%;
+    }
+    .inner_blog h3 a {
+        font-size: 15px;
+    }
+    .l_b_meta span, .l_b_meta span a {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .subscribe_title {
+        text-align: center;
+    }
+    .available_btn {
+        margin: 0 auto;
+        display: table;
+    }
 }
 
 /* Tablet Layout: 768px. */
@@ -19,7 +119,107 @@
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
-    
+    .build_better_img img {
+        max-width: 100%;
+    }
+    .hero_desc h2 {
+        font-size: 26px;
+    }
+    .hero_btn a {
+        margin-bottom: 20px;
+    }
+    .hero_desc p {
+        font-size: 18px;
+    }
+    .shape_01, .shape_02 {
+        display: none;
+    }
+    .hero_desc {
+        padding-top: 120px;
+    }
+    .hero_slide {
+        height: 600px;
+    }
+    .single_fact::after {
+        display: none;
+    }
+    .section_title h2 {
+        font-size: 32px;
+    }
+    .section_title p {
+        font-size: 17px;
+    }
+    .shape_sd_01, .shape_sd_02 {
+        width: 120px;
+    }
+    .watch_video h2 {
+        font-size: 40px;
+    }
+    .watch_video {
+        min-height: 400px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .white_bg {
+        background-size: cover;
+        background-position: center left;
+    }
+    .build_better_desc h2 {
+        font-size: 24px;
+    }
+    .section_title {
+        margin-top: 60px;
+    }
+    .test_space {
+        padding-top: 270px;
+    }
+    .test_item p {
+        font-size: 16px;
+    }
+    .test_img_active img {
+        display: inline-block;
+    }
+    .test_img_item::before {
+        background: transparent;
+    }
+    .faq_area {
+        padding-top: 115px;
+    }
+    .brand_heading {
+        margin-top: 60px;
+    }
+    .brand_heading h3 {
+        font-size: 22px;
+    }
+    .inner_blog {
+        padding: 20px 20px;
+    }
+    .subscribe_space {
+        padding: 55px 20px;
+    }
+    .brand_active.owl-carousel .owl-item img {
+        display: inline-block;
+        width: auto;
+    }
+    .single_brand {
+        text-align: center;
+    }
+    .subscribe_form button {
+        position: static;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .available_text h2 {
+        font-size: 32px;
+    }
+    .available_btn a {
+        margin-bottom: 20px;
+    }
+    .latest_blog_img img {
+        width: 100%;
+    }
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
